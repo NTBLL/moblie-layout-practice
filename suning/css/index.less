@@ -1,0 +1,208 @@
+// 引入common.less
+@import "common";
+
+a{
+  text-decoration: none;
+}
+
+body{
+  min-width: 320px;
+  width: 15rem;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  font-family: Arial;
+  line-height: 1.5;
+  height: 2000px;
+}
+
+@baseFont: 50;
+
+// search-content
+.search-content{
+  width: 15rem;
+  height: 88rem / 50;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+
+  .classify{
+    width: 44rem / @baseFont;
+    height: 70rem / @baseFont;
+    margin: 10rem / @baseFont 26rem / @baseFont 8rem / @baseFont 24rem / @baseFont;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .search{
+    flex: 1;
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: "";
+      left: 18rem / @baseFont;
+      top: 28rem / @baseFont;
+      width: 36rem / @baseFont;
+      height: 36rem / @baseFont;
+      background: url("../images/search.png") no-repeat;
+      background-size: 36rem / @baseFont;
+    }
+
+    input{
+      box-sizing: border-box;
+      width: 100%;
+      border: 0;
+      outline: none;
+      height: 48rem / @baseFont;
+      margin-top: 20rem / @baseFont;
+      border-radius: 24rem / @baseFont;
+      padding-left: 65rem / @baseFont;
+      font-size: 24rem / @baseFont;
+      color: #999999;
+      background-color: #FFFFFF;
+    }
+  }
+
+  .login{
+    width: 75rem / @baseFont;
+    height: 70rem / @baseFont;
+    margin: 9.5rem / @baseFont;
+    font-size: 24rem / @baseFont;
+    text-align: center;
+    line-height: 70rem / @baseFont;
+    color: #FFFFFF;
+  }
+}
+
+// banner
+.banner{
+  width: 15rem;
+  height: 368rem / @baseFont;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// nav
+nav{
+  width: 15rem;
+  height: 308rem / @baseFont;
+  background-color: #FFFFFF;
+  a{
+    float: left;
+    width: 150rem / @baseFont;
+    height: 142rem / @baseFont;
+    text-align: center;
+    img{
+      display: block;
+      width: 84rem / @baseFont;
+      height: 84rem / @baseFont;
+      margin: 24rem / @baseFont 33rem / @baseFont 0;
+    }
+
+    div{
+      width: 100%;
+      height: 28rem / @baseFont;
+      line-height: 28rem / @baseFont;
+      font-size: 22rem / @baseFont;
+      margin-top: 5rem / @baseFont;
+      color: #666666;
+    }
+  }
+}
+
+//szn-ad
+.szn-ad{
+  display: block;
+  width: 15rem;
+  height: 199rem / @baseFont;
+
+  img{
+    float: left;
+    width: 375rem / @baseFont;
+    height: 199rem / @baseFont;
+  }
+}
+
+//toutiao
+.toutiao{
+  width: 15rem;
+  height: 112rem / @baseFont;
+  background: url("../images/toutiao-bg.png") no-repeat;
+  background-size: 15rem 112rem / @baseFont;
+  position: relative;
+
+  .logo{
+    position: absolute;
+    width: 66rem / @baseFont;
+    height: 66rem / @baseFont;
+    left: 45rem / @baseFont;
+    top: 24rem / @baseFont;
+
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .toutiao-content{
+    box-sizing: border-box;
+    width: 600rem / @baseFont;
+    height: 102rem / @baseFont;
+    position: absolute;
+    right: 15rem / @baseFont;
+    top: 5rem / @baseFont;
+    padding-top: 16rem / @baseFont;
+
+    p{
+      width: 594rem / @baseFont;
+      height: 33rem / @baseFont;
+      line-height: 33rem / @baseFont;
+      margin: 0 0 6rem / @baseFont;
+      padding: 0;
+      font-size: 24rem / @baseFont;
+      color: #333;
+
+      i{
+        display: inline-block;
+        vertical-align: middle;
+        font-style: normal;
+        text-align: center;
+        color: #FFFFFF;
+        width: 56rem / @baseFont;
+        height: 24rem / @baseFont;
+        border-radius: 12rem / @baseFont;
+        background-color: #FF6F0C;
+        line-height: 24rem / @baseFont;
+        font-size: 16rem / @baseFont;
+        padding: 0 10rem / @baseFont;
+        margin: 0 10rem / @baseFont 0 0;
+      }
+      span{
+        vertical-align: middle;
+        display: inline-block;
+        width: 360rem / @baseFont;
+        height: 33rem / @baseFont;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+
+    img{
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 102rem / @baseFont;
+      height: 102rem / @baseFont;
+    }
+  }
+}
+
